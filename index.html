@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10 - Guía de Inicio</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT-ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MEASUREMENT-ID', {
+        'send_page_view': true
+      });
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Fuentes -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F3EFE9;
+            color: #1C1C1E;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, .serif-font {
+            font-family: 'DM Serif Display', serif;
+        }
+
+        .text-q10-red { color: #D32F2F; }
+
+        .accordion-content {
+            transition: grid-template-rows 0.3s ease-out;
+        }
+
+        /* Estilo de Tarjeta "Edtech" */
+        .info-card {
+            background: #ffffff;
+            border: 1px solid #1C1C1E;
+            box-shadow: 4px 4px 0px 0px #1C1C1E;
+            border-radius: 16px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .help-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 6px 6px 0px 0px #1C1C1E;
+        }
+
+        .dashed-line {
+            border-left: 2px dashed #CBD5E1;
+        }
+
+        .sparkle {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        /* AJUSTE DE ASPECTO DE VIDEO */
+        /* Usamos la proporción exacta del video proporcionado */
+        .custom-video-aspect {
+            aspect-ratio: 770.8 / 1704;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-[#F3EFE9] min-h-screen flex flex-col items-center pb-32 overflow-x-hidden">
+
+    <!-- DECORACIONES DE FONDO -->
+    <svg class="sparkle top-10 left-4 w-8 h-8 text-gray-400 opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="currentColor" stroke="none"/>
+    </svg>
+    <svg class="sparkle top-24 right-6 w-12 h-12 text-[#F8D57E]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="currentColor" stroke="none"/>
+    </svg>
+
+    <!-- HEADER -->
+    <header class="w-full max-w-3xl pt-16 pb-10 px-6 flex flex-col items-center text-center z-10 relative">
+        <div class="mb-4 inline-block relative">
+            <span class="font-serif text-2xl font-bold tracking-wide">Q10<span class="text-q10-red">.</span></span>
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl text-[#1C1C1E] leading-[1.1] mb-6 relative">
+            Tu Ruta de <br>
+            <span class="relative inline-block">
+                Aprendizaje
+                <svg class="absolute w-full h-3 -bottom-1 left-0 text-[#F8D57E] -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
+                    <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="none" opacity="0.6"/>
+                </svg>
+            </span>
+        </h1>
+        
+        <p class="text-gray-600 text-lg max-w-md mx-auto leading-relaxed">
+            ¡Estás a un clic de empezar! Sigue estos sencillos pasos para activar tu cuenta y dale play a tu formación virtual hoy mismo.
+        </p>
+    </header>
+
+    <main class="w-full max-w-2xl px-6 relative z-10">
+        
+        <!-- LÍNEA CONECTORA -->
+        <div class="absolute left-6 md:left-1/2 md:transform md:-translate-x-1/2 top-10 bottom-20 w-px dashed-line -z-10"></div>
+
+        <!-- 1. INTRODUCCIÓN (Video Google Drive) -->
+        <section class="mb-16 relative pl-12 md:pl-0">
+            <div class="absolute -top-3 left-10 md:left-1/2 md:-ml-[70px] bg-[#D4C4FC] text-[#1C1C1E] px-4 py-1 rounded-full border border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-20">
+                <span class="text-xs font-bold uppercase tracking-wider">Paso Cero</span>
+            </div>
+
+            <div class="info-card bg-white p-6 md:p-10 text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-[#F8D57E] rounded-bl-full opacity-20 -mr-10 -mt-10"></div>
+
+                <h2 class="text-3xl mb-3 text-[#1C1C1E]">¿Qué es Q10?</h2>
+                <p class="text-gray-500 mb-8 font-medium">Aquí tendrás todo a la mano. Tu instructor compartirá videos, guías, retos y cuestionarios para que lleves tu conocimiento al siguiente nivel.</p>
+                
+                <!-- Video Intro - Ajuste Ancho y Botón Fullscreen -->
+                <div class="relative w-full max-w-[320px] mx-auto group">
+                    <div id="video-container-0" class="custom-video-aspect bg-black rounded-xl border-2 border-black shadow-lg overflow-hidden relative">
+                        <iframe class="w-full h-full" 
+                                src="https://drive.google.com/file/d/1u87KSjK6lavdzQhJIW-qEQ3tcGHejNfo/preview?usp=sharing" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen">
+                        </iframe>
+                    </div>
+                    <!-- Botón Fullscreen Mejorado -->
+                    <button onclick="goFullscreen('video-container-0')" class="mt-3 w-full bg-gray-100 hover:bg-[#D32F2F] hover:text-white text-gray-700 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm">
+                        <i data-lucide="maximize" class="w-5 h-5"></i>
+                        <span class="text-sm">Ver en Pantalla Completa</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. LOS PASOS (Videos Debajo, Completos, Drive) -->
+        <div class="space-y-16 pl-12 md:pl-0">
+            
+            <!-- PASO 1 -->
+            <div class="relative group">
+                <div class="absolute -left-16 md:left-1/2 md:-ml-8 md:-top-8 flex justify-center items-center w-12 h-12 md:w-16 md:h-16 bg-[#F8D57E] border-2 border-black rounded-full shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-20">
+                    <span class="font-serif font-bold text-xl md:text-2xl text-black">1</span>
+                </div>
+
+                <div class="info-card p-6 md:p-10 flex flex-col items-center text-center">
+                    <div class="w-full mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Encuentra tu Llave de Acceso</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                            ¡Revisa tu bandeja de entrada! Ya debe haberte llegado un correo de notificación con tus llaves de acceso (usuario y contraseña). ¡Es tu pase de entrada!
+                        </p>
+                        <div class="inline-block bg-gray-100 px-3 py-1 rounded text-xs font-bold text-gray-500">
+                            <i data-lucide="key" class="w-3 h-3 inline mr-1"></i> Credenciales
+                        </div>
+                    </div>
+                    
+                    <!-- Video Paso 1 - Ajuste Ancho (max-w aumentado a 320px) y Botón Fullscreen -->
+                    <div class="relative w-full max-w-[320px]">
+                        <div id="video-container-1" class="custom-video-aspect bg-black rounded-xl border-2 border-black overflow-hidden shadow-md">
+                            <iframe class="w-full h-full" 
+                                    src="https://drive.google.com/file/d/1RRy1YDxgZUnNxYIlnMI5DS_9Fh8Kq2Bu/preview?usp=sharing" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen">
+                            </iframe>
+                        </div>
+                        <button onclick="goFullscreen('video-container-1')" class="mt-3 w-full bg-gray-100 hover:bg-[#D32F2F] hover:text-white text-gray-700 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm">
+                            <i data-lucide="maximize" class="w-5 h-5"></i>
+                            <span class="text-sm">Ver en Pantalla Completa</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PASO 2 -->
+            <div class="relative group">
+                <div class="absolute -left-16 md:left-1/2 md:-ml-8 md:-top-8 flex justify-center items-center w-12 h-12 md:w-16 md:h-16 bg-[#F8D57E] border-2 border-black rounded-full shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-20">
+                    <span class="font-serif font-bold text-xl md:text-2xl text-black">2</span>
+                </div>
+
+                <div class="info-card p-6 md:p-10 flex flex-col items-center text-center">
+                    <div class="w-full mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Encuentra tu Curso Virtual</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                            ¡Ya estás adentro! Ahora solo falta lo más importante: ubica tu curso virtual y prepárate para empezar.
+                        </p>
+                        <div class="inline-block bg-gray-100 px-3 py-1 rounded text-xs font-bold text-gray-500">
+                            <i data-lucide="map" class="w-3 h-3 inline mr-1"></i> Navegación
+                        </div>
+                    </div>
+                    
+                    <!-- Video Paso 2 -->
+                    <div class="relative w-full max-w-[320px]">
+                        <div id="video-container-2" class="custom-video-aspect bg-black rounded-xl border-2 border-black overflow-hidden shadow-md">
+                            <iframe class="w-full h-full" 
+                                    src="https://drive.google.com/file/d/1qREcGgcQkPOBmJU0Lpf99IW9juWb2XUM/preview?usp=sharing" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen">
+                            </iframe>
+                        </div>
+                        <button onclick="goFullscreen('video-container-2')" class="mt-3 w-full bg-gray-100 hover:bg-[#D32F2F] hover:text-white text-gray-700 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm">
+                            <i data-lucide="maximize" class="w-5 h-5"></i>
+                            <span class="text-sm">Ver en Pantalla Completa</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PASO 3 -->
+            <div class="relative group">
+                <div class="absolute -left-16 md:left-1/2 md:-ml-8 md:-top-8 flex justify-center items-center w-12 h-12 md:w-16 md:h-16 bg-[#F8D57E] border-2 border-black rounded-full shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-20">
+                    <span class="font-serif font-bold text-xl md:text-2xl text-black">3</span>
+                </div>
+
+                <div class="info-card p-6 md:p-10 flex flex-col items-center text-center">
+                    <div class="w-full mb-6">
+                        <h3 class="text-2xl font-bold mb-2">¡Exploremos tu Curso Virtual!</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                            Toma el control: Llegó el momento de descubrir todo lo que la plataforma tiene para ofrecerte. Explora sin límites y sácale el máximo provecho.
+                        </p>
+                        <div class="inline-block bg-gray-100 px-3 py-1 rounded text-xs font-bold text-gray-500">
+                            <i data-lucide="smartphone" class="w-3 h-3 inline mr-1"></i> Trucos
+                        </div>
+                    </div>
+                    
+                    <!-- Video Paso 3 -->
+                    <div class="relative w-full max-w-[320px]">
+                        <div id="video-container-3" class="custom-video-aspect bg-black rounded-xl border-2 border-black overflow-hidden shadow-md">
+                            <iframe class="w-full h-full" 
+                                    src="https://drive.google.com/file/d/155KNoE9cp0-DfSDEtcrVM-rjjFhZPzUp/preview?usp=sharing" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen">
+                            </iframe>
+                        </div>
+                        <button onclick="goFullscreen('video-container-3')" class="mt-3 w-full bg-gray-100 hover:bg-[#D32F2F] hover:text-white text-gray-700 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm">
+                            <i data-lucide="maximize" class="w-5 h-5"></i>
+                            <span class="text-sm">Ver en Pantalla Completa</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CTA FINAL -->
+        <section class="my-20 text-center pl-12 md:pl-0">
+            <div class="relative inline-block">
+                <svg class="absolute -top-8 -right-8 w-10 h-10 text-[#F8D57E] animate-bounce" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+                </svg>
+                
+                <a href="https://comfamiliarputumayo.q10.com/" id="cta-main" class="inline-flex items-center gap-3 bg-[#1C1C1E] text-white font-medium text-lg px-8 py-4 rounded-xl shadow-[4px_4px_0px_0px_#9CA3AF] hover:shadow-[2px_2px_0px_0px_#9CA3AF] hover:translate-y-[2px] hover:translate-x-[2px] transition-all duration-200">
+                    <span>Ingresar al Aula Virtual</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- ACORDEÓN DE AYUDA -->
+        <section class="max-w-xl mx-auto mb-12 pl-6 md:pl-0">
+            <div class="flex items-center justify-center gap-3 mb-8">
+                <h2 class="font-serif text-3xl text-[#1C1C1E]">Centro de Ayuda</h2>
+                <span class="bg-[#D4C4FC] text-xs font-bold px-2 py-1 rounded border border-black transform rotate-6">FAQs</span>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- Item 1 -->
+                <div class="info-card help-card bg-white cursor-pointer group" onclick="toggleAccordion(this.querySelector('button'), 'Recursos')">
+                    <button class="w-full text-left py-4 px-6 flex justify-between items-center outline-none">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-[#F3EFE9] flex items-center justify-center border border-gray-200 group-hover:bg-[#F8D57E] transition-colors">
+                                <i data-lucide="book-open" class="w-5 h-5 text-black"></i>
+                            </div>
+                            <span class="text-lg font-bold text-[#1C1C1E]">¿Cómo Ver Tus Recursos Educativos?</span>
+                        </div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 accordion-icon transition-transform duration-300"></i>
+                    </button>
+                    <div class="grid grid-rows-[0fr] accordion-content overflow-hidden">
+                        <div class="overflow-hidden px-6 pb-6">
+                            <div class="relative w-full max-w-[320px] mx-auto">
+                                <div id="video-help-1" class="custom-video-aspect bg-black rounded-xl border-2 border-black overflow-hidden shadow-md">
+                                    <iframe class="w-full h-full" 
+                                            src="https://drive.google.com/file/d/1USHGg-ve8s6eATCh5b1U8TEXHBlfmBS3/preview?usp=sharing" 
+                                            frameborder="0" allow="autoplay; fullscreen">
+                                    </iframe>
+                                </div>
+                                <button onclick="goFullscreen('video-help-1')" class="mt-3 w-full bg-gray-100 hover:bg-[#D32F2F] hover:text-white text-gray-700 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm">
+                                    <i data-lucide="maximize" class="w-5 h-5"></i>
+                                    <span class="text-sm">Ver en Pantalla Completa</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="info-card help-card bg-white cursor-pointer group" onclick="toggleAccordion(this.querySelector('button'), 'Tareas')">
+                    <button class="w-full text-left py-4 px-6 flex justify-between items-center outline-none">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-[#F3EFE9] flex items-center justify-center border border-gray-200 group-hover:bg-[#D4C4FC] transition-colors">
+                                <i data-lucide="upload-cloud" class="w-5 h-5 text-black"></i>
+                            </div>
+                            <span class="text-lg font-bold text-[#1C1C1E]">¿Cómo Subir Tareas?</span>
+                        </div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 accordion-icon transition-transform duration-300"></i>
+                    </button>
+                    <div class="grid grid-rows-[0fr] accordion-content overflow-hidden">
+                        <div class="overflow-hidden px-6 pb-6">
+                            <div class="relative w-full max-w-[320px] mx-auto">
+                                <div id="video-help-2" class="custom-video-aspect bg-black rounded-xl border-2 border-black overflow-hidden shadow-md">
+                                    <iframe class="w-full h-full" src="https://drive.google.com/file/d/1Vza0rJcR2yQq569xYb2BfNbgPWdFYFh7/preview?usp=sharing" frameborder="0" allow="autoplay; fullscreen"></iframe>
+                                </div>
+                                <button onclick="goFullscreen('video-help-2')" class="mt-3 w-full bg-gray-100 hover:bg-[#D32F2F] hover:text-white text-gray-700 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm">
+                                    <i data-lucide="maximize" class="w-5 h-5"></i>
+                                    <span class="text-sm">Ver en Pantalla Completa</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="info-card help-card bg-white cursor-pointer group" onclick="toggleAccordion(this.querySelector('button'), 'Foros')">
+                    <button class="w-full text-left py-4 px-6 flex justify-between items-center outline-none">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-[#F3EFE9] flex items-center justify-center border border-gray-200 group-hover:bg-[#F8D57E] transition-colors">
+                                <i data-lucide="message-square" class="w-5 h-5 text-black"></i>
+                            </div>
+                            <span class="text-lg font-bold text-[#1C1C1E]">¿Cómo Participar en Foros?</span>
+                        </div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 accordion-icon transition-transform duration-300"></i>
+                    </button>
+                    <div class="grid grid-rows-[0fr] accordion-content overflow-hidden">
+                        <div class="overflow-hidden px-6 pb-6">
+                            <div class="relative w-full max-w-[320px] mx-auto">
+                                <div id="video-help-3" class="custom-video-aspect bg-black rounded-xl border-2 border-black overflow-hidden shadow-md">
+                                    <iframe class="w-full h-full" src="https://drive.google.com/file/d/11GElfQ0bgLr-K9hMGQo3swKeloo7pIQY/preview?usp=sharing" frameborder="0" allow="autoplay; fullscreen"></iframe>
+                                </div>
+                                <button onclick="goFullscreen('video-help-3')" class="mt-3 w-full bg-gray-100 hover:bg-[#D32F2F] hover:text-white text-gray-700 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm">
+                                    <i data-lucide="maximize" class="w-5 h-5"></i>
+                                    <span class="text-sm">Ver en Pantalla Completa</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="info-card help-card bg-white cursor-pointer group" onclick="toggleAccordion(this.querySelector('button'), 'Cuestionarios')">
+                    <button class="w-full text-left py-4 px-6 flex justify-between items-center outline-none">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-[#F3EFE9] flex items-center justify-center border border-gray-200 group-hover:bg-[#D4C4FC] transition-colors">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-black"></i>
+                            </div>
+                            <span class="text-lg font-bold text-[#1C1C1E]">¿Cómo Resuelvo un Cuestionario?</span>
+                        </div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 accordion-icon transition-transform duration-300"></i>
+                    </button>
+                    <div class="grid grid-rows-[0fr] accordion-content overflow-hidden">
+                        <div class="overflow-hidden px-6 pb-6">
+                            <div class="relative w-full max-w-[320px] mx-auto">
+                                <div id="video-help-4" class="custom-video-aspect bg-black rounded-xl border-2 border-black overflow-hidden shadow-md">
+                                    <iframe class="w-full h-full" src="https://drive.google.com/file/d/1G3dMahtEwXpjN_YNGK4qoeMpn6bulesz/preview?usp=sharing" frameborder="0" allow="autoplay; fullscreen"></iframe>
+                                </div>
+                                <button onclick="goFullscreen('video-help-4')" class="mt-3 w-full bg-gray-100 hover:bg-[#D32F2F] hover:text-white text-gray-700 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-sm">
+                                    <i data-lucide="maximize" class="w-5 h-5"></i>
+                                    <span class="text-sm">Ver en Pantalla Completa</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / WHATSAPP -->
+    <a href="https://wa.me/573127651613" id="whatsapp-btn" target="_blank" class="fixed bottom-6 right-6 bg-[#1C1C1E] text-white py-3 px-5 rounded-full shadow-2xl flex items-center gap-3 z-50 transition-all hover:-translate-y-1 group border border-white/20">
+        <div class="relative">
+            <span class="absolute -top-1 -right-1 flex h-3 w-3">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500 border-2 border-[#1C1C1E]"></span>
+            </span>
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+        </div>
+        
+        <div class="flex flex-col text-left">
+            <span class="text-[10px] text-gray-400 uppercase tracking-wider font-bold">Soporte</span>
+            <span class="text-sm font-bold text-white">Chatea con nosotros</span>
+        </div>
+    </a>
+
+    <script>
+        lucide.createIcons();
+
+        function toggleAccordion(button, tituloAyuda) {
+            event.stopPropagation();
+            
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.accordion-icon');
+            
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.replace('grid-rows-[1fr]', 'grid-rows-[0fr]');
+                    const btn = item.previousElementSibling;
+                    const otherIcon = btn.querySelector('.accordion-icon');
+                    if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                }
+            });
+
+            if (content.classList.contains('grid-rows-[0fr]')) {
+                content.classList.replace('grid-rows-[0fr]', 'grid-rows-[1fr]');
+                if(icon) icon.style.transform = 'rotate(180deg)';
+                
+                gtag('event', 'ayuda_abierta', { 'seccion_nombre': tituloAyuda });
+            } else {
+                content.classList.replace('grid-rows-[1fr]', 'grid-rows-[0fr]');
+                if(icon) icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Función personalizada para Pantalla Completa
+        function goFullscreen(elementId) {
+            const elem = document.getElementById(elementId);
+            const iframe = elem.querySelector('iframe');
+            
+            // Intentar primero en el contenedor
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+            
+            // Fallback al iframe si es necesario
+            if(iframe && iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            }
+        }
+
+        document.getElementById('cta-main').addEventListener('click', function() {
+            gtag('event', 'clic_ir_aula', { 'event_category': 'conversion', 'event_label': 'Botón Principal' });
+        });
+
+        document.getElementById('whatsapp-btn').addEventListener('click', function() {
+            gtag('event', 'clic_whatsapp', { 'event_category': 'soporte' });
+        });
+    </script>
+</body>
+</html>
